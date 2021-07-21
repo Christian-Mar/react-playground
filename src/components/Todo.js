@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Modal from './Modal';
 import Backdrop from './Backdrop';
-import { I18nProvider, LOCALES } from '../i18n';
+//import { I18nProvider, LOCALES } from '../i18n';
 
 import translate from '../i18n/translate';
 
