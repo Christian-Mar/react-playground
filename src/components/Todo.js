@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Modal from './Modal';
 import Backdrop from './Backdrop';
+import { I18nProvider, LOCALES } from '../i18n';
+
+import translate from '../i18n/translate';
 
 function Todo(props) {
   const [ modalIsOpen, setModalIsOpen ] = useState(false); //initial state
@@ -19,12 +22,13 @@ function Todo(props) {
 			<h2>{props.text}</h2>
 			<div className="actions">
 				<button className="btn" onClick={deleteHandler}>
-					Delete
+					{translate('delete')}
 				</button>
 			</div>
-      { modalIsOpen ? <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}/> : null}  
-			{ modalIsOpen && <Backdrop onCancel={closeModalHandler}/>}
-			
+			{modalIsOpen ? (
+				<Modal onCancel={closeModalHandler} onConfirm={closeModalHandler} />
+			) : null}
+			{modalIsOpen && <Backdrop onCancel={closeModalHandler} />}
 		</div>
 	);
 }

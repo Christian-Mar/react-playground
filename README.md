@@ -1,3 +1,13 @@
+Adding multi-language support: 
+
+https://www.mindbowser.com/adding-multi-language-support-using-reactjs/
+https://betterprogramming.pub/add-multi-language-support-in-react-js-a771c9ab31c3
+https://www.techomoro.com/how-to-create-a-simple-multi-language-website-with-react/
+https://www.cluemediator.com/implement-multi-languages-in-react
+
+
+
+
 pushing to github
 
 git remote add origin https://github.com/Christian-Mar/react-playground.git
